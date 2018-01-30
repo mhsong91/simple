@@ -18,7 +18,7 @@ public class UserService {
 	public User getUser() {
 		return udao.selectuser();
 	}
-	public List<User> selectList(){
+	/*public List<User> selectList(){
 		return udao.selectuserList();
-	}
+	}*/
 }

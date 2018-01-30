@@ -4,24 +4,54 @@ import javax.inject.Named;
 
 @Named
 public class User {
-	private String name;
-	private int age;
-	public String getName() {
-		return name;
+	private int uiNO;
+	private String uiName;
+	private int uiAge;
+	private String uiId;
+	private String uiPwd;
+	private int ciNo;
+	public int getUiNO() {
+		return uiNO;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setUiNO(int uiNO) {
+		this.uiNO = uiNO;
 	}
-	public int getAge() {
-		return age;
+	public String getUiName() {
+		return uiName;
 	}
-	public void setAge(int age) {
-		this.age = age;
+	public void setUiName(String uiName) {
+		this.uiName = uiName;
+	}
+	public int getUiAge() {
+		return uiAge;
+	}
+	public void setUiAge(int uiAge) {
+		this.uiAge = uiAge;
+	}
+	public String getUiId() {
+		return uiId;
+	}
+	public void setUiId(String uiId) {
+		this.uiId = uiId;
+	}
+	public String getUiPwd() {
+		return uiPwd;
+	}
+	public void setUiPwd(String uiPwd) {
+		this.uiPwd = uiPwd;
+	}
+	public int getCiNo() {
+		return ciNo;
+	}
+	public void setCiNo(int ciNo) {
+		this.ciNo = ciNo;
 	}
 	@Override
 	public String toString() {
-		return "User [name=" + name + ", age=" + age + "]";
+		return "User [uiNO=" + uiNO + ", uiName=" + uiName + ", uiAge=" + uiAge + ", uiId=" + uiId + ", uiPwd=" + uiPwd
+				+ ", ciNo=" + ciNo + "]";
 	}
 	
+
 
 }
